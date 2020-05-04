@@ -344,8 +344,9 @@ nnoremap <leader>ss :SaveSession<Space>
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
-nmap <leader>2 :w<CR>
-nmap <leader>1 :q!<CR>
+" Files
+nmap <leader>w :w<CR>
+nmap <leader>q :q!<CR>
 
 inoremap <C-S> <Esc>:w<CR>
 
@@ -426,9 +427,7 @@ endif
 
 "" Buffer nav
 noremap <leader>z :bp<CR>
-noremap <leader>q :bp<CR>
 noremap <leader>x :bn<CR>
-noremap <leader>w :bn<CR>
 
 "" Close buffer
 noremap <leader>c :bd<CR>
