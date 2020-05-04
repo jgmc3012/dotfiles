@@ -1,11 +1,12 @@
 #! /bin/bash 
 sudo apt install -y \
-    zsh git wget curl byobu htop vim neovim pylint\
+    zsh git wget curl byobu htop vim neovim pylint3\
     make build-essential libssl-dev zlib1g-dev libbz2-dev\
     libreadline-dev libsqlite3-dev llvm libncurses5-dev\
     libncursesw5-dev xz-utils tk-dev libffi-dev mysql-client\
     mysql-server
 
+sudo ln -sf /usr/bin/pylint3 /usr/bin/pylint
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 chsh -s `which zsh`
 zsh
