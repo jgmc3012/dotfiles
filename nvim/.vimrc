@@ -29,6 +29,8 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 Plug 'easymotion/vim-easymotion'
 Plug  'tmhedberg/SimpylFold'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-commentary'
@@ -209,7 +211,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
-
+" Themes
+colorscheme gruvbox
+set background=dark
+let g:gruvbox_contrast_dark = 'hard'
 "*****************************************************************************
 "" User Experience
 "*****************************************************************************
