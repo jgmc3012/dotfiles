@@ -1,6 +1,6 @@
 #! /bin/bash 
 sudo apt install -y \
-    zsh git wget curl byobu htop vim neovim\
+    zsh git wget curl byobu htop vim neovim pylint\
     make build-essential libssl-dev zlib1g-dev libbz2-dev\
     libreadline-dev libsqlite3-dev llvm libncurses5-dev\
     libncursesw5-dev xz-utils tk-dev libffi-dev mysql-client\

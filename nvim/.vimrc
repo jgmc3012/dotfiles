@@ -44,6 +44,7 @@ Plug 'tpope/vim-fugitive'
 
 " Python plugins
 Plug  'tmhedberg/SimpylFold'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
@@ -100,3 +101,9 @@ if 'VIRTUAL_ENV' in os.environ:
   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
   execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+" Configuraciones de Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_python_checkers = ['pylint']
